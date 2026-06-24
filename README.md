@@ -10,8 +10,12 @@ app_port: 8501
 
 An enterprise-grade Retrieval-Augmented Generation (RAG) chatbot designed to ingest, process, and query complex medical research papers (e.g., PubMed, ArXiv). It uses local embedding models to ensure data privacy and Google Gemini 1.5 Flash for high-quality, hallucination-free generation.
 
-## 🚀 Resume Bullet Point
-> **Built a Medical Research RAG Chatbot** that ingests PubMed papers, generates embeddings via sentence-transformers, and retrieves context using FAISS vector search. Integrated Gemini 1.5 Flash with hallucination-prevention prompting. Evaluated using RAGAS (Faithfulness: 0.91, Relevancy: 0.88). Deployed on Hugging Face Spaces with source citations per answer. Live: [link]
+## 🚀 Project Overview
+
+**Medical Research RAG Chatbot** | *Python, LangChain, FAISS, Docker*
+**Live:** [huggingface.co/spaces/arinShr/medical-rag-assistant](https://huggingface.co/spaces/arinShr/medical-rag-assistant)
+
+* Built a Retrieval-Augmented Generation pipeline with LangChain, Gemini 1.5 Flash, and a local FAISS vector store, including multi-hop query decomposition for comparative queries across documents.
 
 ## 🛠️ Tech Stack
 * **Document Ingestion:** PyMuPDF, LangChain (`RecursiveCharacterTextSplitter` - 512 tokens / 50 overlap)
